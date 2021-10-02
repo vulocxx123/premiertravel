@@ -1,0 +1,192 @@
+.dang__ky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateY(-106%);
+    transition: transform 0.5s;
+    z-index: 100;
+}  
+.modal-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dang__ky.open {
+    display: block;
+    transform: translateY(0);
+}
+.auth-form {
+    position: absolute;
+    width: 568px;
+    max-height: 90vh;
+    border-radius: 12px;
+    overflow-y: scroll;
+    background-color: #fff;
+    
+    /* animation: growth ease-in 0.3s; */
+}
+/* Làm thanh cuộn */
+.auth-form::-webkit-scrollbar {
+    width: 5px;
+    display: block;
+}
+.auth-form::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-right: none;
+    border-left: none;
+}
+.auth-form::-webkit-scrollbar-track-piece:end {
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+.auth-form::-webkit-scrollbar-track-piece:start {
+    background-color: transparent;
+    margin-top: 30px;
+}
+/* End */
+.auth-form-head {
+    height: 64px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f7f7f7;
+}
+.auth-form-head-icon {
+    padding: 10px 16px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 900;
+}
+.auth-form-head-icon:hover {
+    background-color: #f7f7f7;
+}
+.auth-form-head-heading {
+    flex: 1;
+    font-size: 16px;
+    text-align: center;
+}
+.auth-form-body {
+    padding: 24px;
+}
+.auth-form-body-heading {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.auth-form-body-form form {
+    padding: 20px 0;
+}
+.auth-form-body-selection {
+    height: 44px;
+}
+.auth-form-body-selection::before {
+    content: "Quốc gia/Khu vực";
+    display: block;
+    font-size: 11px;
+    color: #aaa;
+    height: 8px;
+    position: absolute;
+    left: 36px;
+}
+.auth-form-img {
+    padding-left: 20px;
+}
+.auth-form-select-phone {
+    width: 100%;
+    font-size: 14px;
+    height: 44px;
+    outline: none;
+    padding: 12px 20px 0 12px;
+    appearance: none;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.auth-form-body-selection select option {
+    color: #000;
+    background-color: #fff;
+}
+.auth-form-body-phone-input {
+    margin: 8px 0;
+    position: relative;
+}
+.auth-form-body-phone-input input {
+    width: 100%;
+    height: 44px;
+    outline: none;
+    padding: 12px 20px 0 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+.auth-form-body-phone-label {
+    left: 17px;
+    font-size: 15px;
+    position: absolute;
+    color: #aaa;
+    top: 15px;
+    pointer-events: none;
+    transition: 0.3s ease;
+    
+}
+
+.auth-form-body-phone-input input:not(:placeholder-shown) + .auth-form-body-phone-label,
+.auth-form-body-phone-input input:focus + .auth-form-body-phone-label {
+    font-size: 11px;
+    transform: translateY(-50%);
+    top: 12px;
+    left: 12px;
+}
+.auth-form-body-policy {
+    font-size: 12px;
+    color: #222;
+}
+.auth-form-body-btn {
+    margin-top: 16px;
+    text-align: center;
+    background-color: #017cc1;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    height: 44px;
+    line-height: 39px;
+}
+.auth-form-body-seperate {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.auth-form-body-seperate hr {
+    flex: 1;
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+    margin: 0;
+    height: 1px;
+}
+
+.auth-form-body-social-btn {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0 12px;
+    margin-top: 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.auth-form-body-social-btn:hover {
+    border: 1px solid #aaa;
+}
+.auth-form-body-social-btn span {
+    flex: 1;
+    text-align: center;
+}
+.cusopointer {
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+:root {
+    --trang-color-: #fff;
+    --den-color-: #000;
+}
+
+@keyframes fadeIn {
+    0% {
+        top: 70px;
+    }
+}
+@keyframes goup {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
